@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 314334204297588506}
   - component: {fileID: 1945385215660691894}
   - component: {fileID: 7413739833331397686}
+  - component: {fileID: 3538224423278337735}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -90,6 +91,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40c721a5c45fbfa4f8ee05e71cb1ee5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3538224423278337735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738028987643762533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87a059d5f55fae48b3dfe86a302e959, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioScore: {fileID: 8300000, guid: 3f91386a7858aba46926c59e10d34244, type: 3}
 --- !u!1 &2961757968187219361
 GameObject:
   m_ObjectHideFlags: 0
@@ -103,7 +117,7 @@ GameObject:
   - component: {fileID: 815332890546796110}
   m_Layer: 0
   m_Name: Upper_pipe
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -231,9 +245,10 @@ GameObject:
   - component: {fileID: 3749838161970102457}
   - component: {fileID: 1166016987413217646}
   - component: {fileID: 6122444810540376690}
+  - component: {fileID: 8738882919369600527}
   m_Layer: 0
   m_Name: Lower_pipe
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -350,6 +365,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.26, y: 1.6}
   m_EdgeRadius: 0
+--- !u!114 &8738882919369600527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3526103853188732259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98314cb6745a37948843cb9e54bcb078, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioDeath: {fileID: 8300000, guid: 5734ab2f732ea9a4d8599471b13bf828, type: 3}
 --- !u!1 &5424556446845676797
 GameObject:
   m_ObjectHideFlags: 0

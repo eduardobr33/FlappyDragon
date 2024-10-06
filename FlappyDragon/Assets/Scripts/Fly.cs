@@ -7,6 +7,8 @@ public class Fly : MonoBehaviour
     public GameManager gameManager;
     public float velocity = 1;
     private Rigidbody2D rb;
+    [SerializeField] private AudioClip AudioFly;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,9 +18,12 @@ public class Fly : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
             rb.velocity = Vector2.up * velocity;
+
+            SoundManager.Instance.PlaySound(AudioFly);
+            //Debug.Log("AudioFly Played");
         }
     }
 
